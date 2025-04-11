@@ -1,0 +1,100 @@
+/**
+ * Journal Single Page Styles
+ *
+ * Styling for single journal pages with metadata and related articles
+ */
+
+/* Journal metadata container */
+.journal-meta {
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* Each journal meta item */
+.journal-meta > div {
+    margin-right: 30px;
+    font-size: 1rem;
+}
+
+.journal-meta strong {
+    font-weight: 600;
+    color: #333;
+}
+
+/* Journal content */
+.journal-content {
+    margin-bottom: 40px;
+    line-height: 1.7;
+}
+
+/* Related articles section */
+.journal-related-articles {
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 25px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+/* Related articles title */
+.related-articles-title {
+    font-size: 1.4rem;
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* Articles list */
+.articles-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Article item */
+.article-item {
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px dashed #e0e0e0;
+}
+
+.article-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+/* Article link */
+.article-link {
+    display: block;
+    color: #2271b1;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+    padding: 5px 0;
+}
+
+.article-link:hover {
+    color: #135e96;
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .journal-meta {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .journal-meta > div {
+        margin-right: 0;
+    }
+}
